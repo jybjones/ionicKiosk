@@ -1,6 +1,8 @@
-import {App, Platform} from 'ionic-angular';
+import {App, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HomePage} from './pages/home/home';
+import {CheckinPage} from './pages/checkin/checkin';
+import {LoginPage} from './pages/login/login';
+import {PatientDetailPage} from './pages/patient-detail/patient-detail';
 
 
 @App({
@@ -8,7 +10,7 @@ import {HomePage} from './pages/home/home';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
-  rootPage: any = HomePage;
+  rootPage: any = LoginPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
