@@ -14,11 +14,34 @@ import {PeopleService} from '../../providers/people-service/people-service';
 
 export class PatientDetailPage {
    patient: any;
+   // isClassVisible: false;
+   
    constructor(public nav: NavController, public navParams: NavParams, public peopleService: PeopleService) {
    	// If we navigated to this page, we will have an item available as a nav param
    	this.patient = navParams.get('patient');
-   	this.peopleService = peopleService;
+
    }
+
+    verified(event) {
+    this.nav.push(PatientDetailPage, {
+    });
+  }
+
+  // isClassVisible(){
+  //   isClassVisible = !isClassVisible;
+  // }
+// getStyle() {
+//     if(this.showStyle){
+//       return "yellow";
+//     } else {
+//       return "";
+//     }
+//   }
+
+
+
+
+
 
 }
 

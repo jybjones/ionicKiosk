@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="94px" height="123px" viewBox="0 0 94 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>intake form img</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Kiosk-Phase-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Patient-Detail-1a" transform="translate(-570.000000, -676.000000)" fill="#E8E8E8">
+            <g id="patient-forms" filter="url(#filter-1)" transform="translate(45.000000, 589.000000)">
+                <g id="3" transform="translate(462.000000, 0.000000)">
+                    <g id="intake-form-img" transform="translate(67.000000, 90.000000)">
+                        <path d="M0,0.0001796875 L0,115.00018 L72.8617083,115.00018 L86,101.821898 L86,0.0001796875 L0,0.0001796875 Z M2.50833333,2.51580469 L83.4916667,2.51580469 L83.4916667,99.6890078 L70.7332083,99.6890078 L70.7332083,112.484555 L2.50833333,112.484555 L2.50833333,2.51580469 Z M73.2415417,102.204633 L82.070875,102.204633 L73.2415417,111.059633 L73.2415417,102.204633 Z" id="Fill-1"></path>
+                        <rect id="Rectangle-409" x="12" y="20" width="64" height="14"></rect>
+                        <rect id="Rectangle-409-Copy-4" x="12" y="47" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-5" x="34.2608696" y="47" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-6" x="56.5217391" y="47" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-9" x="12" y="58" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-8" x="34.2608696" y="58" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-7" x="56.5217391" y="58" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-12" x="12" y="69" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-11" x="34.2608696" y="69" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy-10" x="56.5217391" y="69" width="19.4782609" height="8.44238281"></rect>
+                        <rect id="Rectangle-409-Copy" x="12" y="39" width="64" height="3"></rect>
+                        <rect id="Rectangle-409-Copy-13" x="12" y="83" width="64" height="8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

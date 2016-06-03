@@ -44,8 +44,47 @@ span.appt-details {
   	box-shadow: none;
   	margin-top: -15px;
 }
+.selection {
+    margin-top: 50px;
+}
+
+
+ion-card p {
+    margin: 0px 0px;
+}
+.logo {
+  height: 115px;
+  margin-top: 30px;
+}
+p.bottom-stat {
+    display: center;
+    width: 100%;
+    height: 25px;
+    margin-top: 50px;
+    color: #979797;
+    background: #82D5BD;
+}
+p.bottom-stat.incomplete {
+    background: #F9F9F9;
+  
+}
+p.bottom-stat.incomplete-percent {
+     background-image:linear-gradient(to right,  
+       #EEEEEE 25%,
+       #F9F9F9 25%    
+    );
+
+}
+// .my-class {
+//    background: transparent !important;
+//   border: 1px solid #6ECDB2 !important;
+//   color: #6ECDB2;
+//     box-shadow: none;
+//     margin-top: -15px;
+//   }
+
+
 
 
 }
-
 
