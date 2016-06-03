@@ -1,5 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {PeopleService} from '../../providers/people-service/people-service';
+import {ConsentPage} from "../consent/consent";
 
 /*
   Generated class for the PatientDetailPage page.
@@ -26,6 +27,10 @@ export class PatientDetailPage {
     this.nav.push(PatientDetailPage, {
     });
   }
+
+  goToConsent(){
+      this.nav.push(ConsentPage);
+    }
 
   // isClassVisible(){
   //   isClassVisible = !isClassVisible;

@@ -10,6 +10,8 @@
 @import '../pages/checkin/checkin';
 @import '../pages/login/login';
 @import '../pages/patient-detail/patient-detail';
+@import "../pages/consent/consent";
+@import "../pages/intake-forms/intake-forms";
 
 ion-content {
 	background-color: #53B6F0;
@@ -29,4 +31,9 @@ button {
 
 ion-title {
     padding: 50px 15px 25px 15px;
+}
+ion-footer-bar.orange-footer {
+    background: #F7774A !important; 
+    color: #FFFFFF;
+    text-align: center;  
 }

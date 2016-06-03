@@ -3,6 +3,7 @@ import {StatusBar} from 'ionic-native';
 import {CheckinPage} from './pages/checkin/checkin';
 import {LoginPage} from './pages/login/login';
 import {PatientDetailPage} from './pages/patient-detail/patient-detail';
+import {ConsentPage} from "./pages/consent/consent";
 
 
 @App({
