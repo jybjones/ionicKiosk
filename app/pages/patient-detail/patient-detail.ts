@@ -15,11 +15,13 @@ import {ConsentPage} from "../consent/consent";
 
 export class PatientDetailPage {
    patient: any;
-   // isClassVisible: false;
-   
+   active: boolean = false;
+
+  
    constructor(public nav: NavController, public navParams: NavParams, public peopleService: PeopleService) {
    	// If we navigated to this page, we will have an item available as a nav param
    	this.patient = navParams.get('patient');
+
 
    }
 
@@ -32,20 +34,10 @@ export class PatientDetailPage {
       this.nav.push(ConsentPage);
     }
 
-  // isClassVisible(){
-  //   isClassVisible = !isClassVisible;
-  // }
-// getStyle() {
-//     if(this.showStyle){
-//       return "yellow";
-//     } else {
-//       return "";
-//     }
-//   }
-
-
-
-
+  buttonClick() {
+      this.active = !this.active;
+     
+    }
 
 
 }

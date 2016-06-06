@@ -1,81 +1,86 @@
 .patient-detail {
 
-.item {
+  .item {
     align-items: baseline;
-}
+  }
 
-.item-inner {
-	border: none !important;
-}
+  .item-inner {
+  	border: none !important;
+  }
  
 // .button-container {
 //     align-self: flex-end;
 //     text-align: center;
 // }
 
-.bottom-detail{
-	background: #F9F9F9;
-	padding: 15px 2px;
-}
+  .bottom-detail{
+  	background: #F9F9F9;
+  	padding: 15px 2px;
+  }
 
-.bordered {
-	border: .5px solid #E3E3E3;
-	margin: 3px;
-}
+  .bordered {
+  	border: .5px solid #E3E3E3;
+  	margin: 3px;
+  }
 
-.personal-detail {
-  // height: 115px;
-  // width: 214px;
-  // font-family: "proximaNova-semiBold";
-  // font-size: 1.2rem;
-  color: #666666;
-  text-align: center;    
-}
-span.appt-details {
-  // font-family: "proximaNova-regular";
-  color: #979797;
-  // font-size: 1.4rem;
-  // line-height: 2.5rem;
-}
-.block-btn {
-	background: transparent !important;
-	border: 1px solid #6ECDB2 !important;
-	color: #6ECDB2;
-  	box-shadow: none;
-  	margin-top: -15px;
-}
-.selection {
+  .personal-detail {
+    // height: 115px;
+    // width: 214px;
+    // font-family: "proximaNova-semiBold";
+    // font-size: 1.2rem;
+    color: #666666;
+    text-align: center;    
+  }
+  span.appt-details {
+    // font-family: "proximaNova-regular";
+    color: #979797;
+    // font-size: 1.4rem;
+    // line-height: 2.5rem;
+  }
+  // .block-btn {
+  // 	background: transparent !important;
+  // 	border: 1px solid $kiosk-green !important;
+  // 	color: $kiosk-green;
+  //   box-shadow: none;
+  //   margin-top: -15px;
+  // }
+  .selection {
     margin-top: 50px;
-}
+  }
 
-
-ion-card p {
+  ion-card p {
     margin: 0px 0px;
-}
-.logo {
-  height: 115px;
-  margin-top: 30px;
-}
-p.bottom-stat {
+  }
+  .logo {
+    height: 115px;
+    margin-top: 30px;
+  }
+  p.bottom-stat {
     display: center;
     width: 100%;
     height: 25px;
     margin-top: 50px;
     color: #979797;
-    background: #82D5BD;
-}
-p.bottom-stat.incomplete {
-    background: #F9F9F9;
-  
-}
-p.bottom-stat.incomplete-percent {
+    background: $kiosk-green;
+  }
+
+  p.bottom-stat.incomplete {
+    background: #F9F9F9;  
+  }
+  p.bottom-stat.incomplete-percent {
      background-image:linear-gradient(to right,  
        #EEEEEE 25%,
        #F9F9F9 25%    
     );
+  }
 
-}
-
+  ion-col.lrg-arrow {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    opacity: .6;
+    margin-top: -25px;
+  }
 
 // .my-class {
 //    background: transparent !important;
@@ -85,6 +90,17 @@ p.bottom-stat.incomplete-percent {
 //     margin-top: -15px;
 //   }
 
+.my-class {
+   background: transparent !important;
+    border: 1px solid $kiosk-green !important;
+    color: $kiosk-green ;
+    box-shadow: none;
+  }
+
+button.button.button-block.button-default {
+    background: #82D5BD;
+
+}
 
 
 

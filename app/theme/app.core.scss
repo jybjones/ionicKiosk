@@ -6,7 +6,8 @@
 // These are the imports which make up the design of this app.
 // By default each design mode includes these shared imports.
 // App Shared Sass variables belong in app.variables.scss.
-
+	
+// @import '../icons/ionicons';
 @import '../pages/checkin/checkin';
 @import '../pages/login/login';
 @import '../pages/patient-detail/patient-detail';

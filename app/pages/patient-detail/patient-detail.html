@@ -1,18 +1,19 @@
 
-<ion-navbar *navbar>
+<ion-navbar secondary *navbar>
   <button menuToggle *ngIf="!patient">
     <!-- <ion-icon name="menu">verify?</ion-icon> -->
   </button>
-  <ion-title>Patient Detail</ion-title>
+  <ion-title>
+    <img src = "images/kiosk-logo.svg" class="logo" /> Patient Detail
+  </ion-title>
 </ion-navbar>
 
 <ion-content padding class="patient-detail">
  <div *ngIf="patient" class="selection">
-  <ion-col>
-      		Arrow here
+  <ion-col class="lrg-arrow">
+     <ion-icon name="arrow-down" isActive="false"></ion-icon>
   </ion-col>
-
-
+ <!--  <ion-icon name="arrow-down" isActive="false"></ion-icon> -->
 
     <ion-container>
          <ion-item>
@@ -38,8 +39,11 @@
 		  </ion-row>
 
    		<ion-row class="bottom-detail">
-  		    <button class="button button-block block-btn" (click)="verified($event)">Verify</button>
-      
+  		   <!--  <button class="button button-block block-btn" (click)="verified($event)">Verify</button> -->
+          <button class="button button-block" [class.my-class]="!active" (click)="buttonClick()">Verify</button>
+
+
+
    <!--  <div>
       <button [class.my-class]="!isClassVisible" (click)="isClassVisible = !isClassVisible;">
         Verify
@@ -91,12 +95,7 @@
 </ion-container>
 </div>
 
-<!-- <ion-footer-bar>
-    <button light (click)="goToConsent()">Consent form <ion-icon [name]="myIcon"></ion-icon></button>
-</ion-footer-bar> -->
-
-
 </ion-content>
 <ion-footer-bar class="orange-footer">
-  <button clear (click)="goToConsent()" style="color:white;">Launch Forms</button>
+  <button clear (click)="goToConsent()" style="color:white;">LAUNCH FORMS</button>
 </ion-footer-bar>
