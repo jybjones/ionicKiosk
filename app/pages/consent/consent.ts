@@ -1,4 +1,5 @@
-import {Page, NavController} from 'ionic-angular';
+import {NavController} from 'ionic-angular';
+import {Component} from "@angular/core";
 import {PatientDetailPage} from '../patient-detail/patient-detail';
 import {IntakeFormsPage} from '../intake-forms/intake-forms';
 /*
@@ -7,7 +8,7 @@ import {IntakeFormsPage} from '../intake-forms/intake-forms';
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
-@Page({
+@Component({
   templateUrl: 'build/pages/consent/consent.html',
 })
 

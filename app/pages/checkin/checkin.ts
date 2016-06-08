@@ -1,8 +1,9 @@
-import {Page, NavController, NavParams} from 'ionic-angular';
+import {NavController, NavParams} from 'ionic-angular';
+import {Component} from "@angular/core";
 import {PeopleService} from '../../providers/people-service/people-service';
 import {PatientDetailPage} from '../patient-detail/patient-detail';
 
-@Page({
+@Component({
   templateUrl: 'build/pages/checkin/checkin.html',
   providers: [PeopleService]
 })

@@ -1,4 +1,5 @@
-import {Page, NavController} from 'ionic-angular';
+import {NavController} from 'ionic-angular';
+import {Component} from "@angular/core";
 import {CheckinPage} from '../checkin/checkin';
 
 /*
@@ -7,7 +8,7 @@ import {CheckinPage} from '../checkin/checkin';
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
-@Page({
+@Component({
   templateUrl: 'build/pages/login/login.html',
 })
 export class LoginPage {
