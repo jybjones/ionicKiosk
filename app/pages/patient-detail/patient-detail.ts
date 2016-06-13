@@ -19,7 +19,6 @@ import {Directive, ElementRef, Renderer, Input} from '@angular/core';
 export class PatientDetailPage {
    patient: any;
    active: boolean = false;
-  
    constructor(public nav: NavController, public navParams: NavParams, public peopleService: PeopleService, el: ElementRef, renderer: Renderer){
    	// If we navigated to this page, we will have an item available as a nav param
    	this.patient = navParams.get('patient');

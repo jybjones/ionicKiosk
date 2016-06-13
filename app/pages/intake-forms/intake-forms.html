@@ -15,5 +15,59 @@
   <h4>Have you ever had any of the following?</h4>
 
 
+<ion-container>
+<ion-row>
+
+ <!-- <ion-segment [(ngModel)]="patient-submit" multiple="true"> -->
+      <!--  <button class="button button-block" [class.my-class]="!active"(click)="formsClick()">Verify</button>
+        <button class="button button-block" [class.my-class]="!active"(click)="formsClick()">Verify</button>
+         <button class="button button-block" [class.my-class]="!active"(click)="formsClick()">Verify</button> -->
+<button id="color" class="button-block background" (click)="changeColor($event)" value="1">A</button>
+<button id="color" class="button-block background" (click)="changeColor($event)">B</button>
+<button id="color" class="button-block background" (click)="changeColor($event)">C</button>
+
+<!-- <button id="color" bgClass = bgClass=='background' ? 'background2' : 'background';>C</button> -->
+
+
+<!-- <element [className]="bgClass"... /> -->
+<!-- <button[className]="bgClass"  (click)="changeColor($event)">TEST </button[className]="bgClass"> -->
+
+
+  <ion-col width-10 class="dodo">
+  <p> <img src = "images/multi-select.png"/></p> <br>
+   <p> <img src = "images/multi-select.png"/></p> <br>
+   <p> <img src = "images/multi-select.png"/></p> <br>
+   <p> <img src = "images/multi-select.png"/></p> <br>
+  </ion-col> 
+
+</ion-row>
+
+ 
+
+</ion-container>
+
+
+
+<!-- shows output on th ebottom -->
+<!-- <ion-list radio-group [(ngModel)]="content" multiple="true">
+    <ion-item class="listItems">
+        <ion-label>Option 1</ion-label>
+        <ion-radio checked="false" value="Option1" style="background: green;"></ion-radio>
+    </ion-item>
+
+    <ion-item class="listItems">
+        <ion-label>Option 2</ion-label>
+        <ion-radio checked="false" value="Option2"></ion-radio>
+    </ion-item>
+
+    <ion-item class="listItems">
+        <ion-label>Option 3</ion-label>
+        <ion-radio checked="false" value="Option3"></ion-radio>
+    </ion-item>
+    </ion-list>
+    <h *ngIf="content=='Option1'"> Option 4</h>
+    <h *ngIf="content=='Option2'"> Option 2</h>
+    <h *ngIf="content=='Option3'"> Option 3</h>
+ -->
 
 </ion-content>

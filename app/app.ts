@@ -9,6 +9,7 @@ import {CheckinPage} from './pages/checkin/checkin';
 import {LoginPage} from './pages/login/login';
 import {PatientDetailPage} from './pages/patient-detail/patient-detail';
 import {ConsentPage} from "./pages/consent/consent";
+import {IntakeFormsPage} from "./pages/intake-forms/intake-forms";
 
 import {PeopleService} from "./providers/people-service/people-service.ts"
 

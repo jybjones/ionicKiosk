@@ -2,5 +2,49 @@
 	background: #FFFFFF;
 	 color: #666666;
 
+// .my-class {
+//    background: transparent !important;
+//     border: 1px solid $kiosk-green !important;
+//     color: $kiosk-green ;
+//     box-shadow: none;
+//   }
+// .button {
+//    background: transparent !important;
+//     border: 1px solid $kiosk-green !important;
+//     color: $kiosk-green ;
+//     box-shadow: none;
+//   }
+//   .my-button {
+//   	background: yellow !important;
+//   }
+
+.background {
+  background: transparent;
+    border: 1px solid $kiosk-green !important;
+    color: $kiosk-green ;
+    box-shadow: none;
 }
+
+.background2 {
+  background-color: $kiosk-green;
+  color: white;
+}
+
+.button:hover:not(.disable-hover) {
+    background-color: $kiosk-green;
+    color: white;
+}
+
+
+
+  .col {
+  	height: 120px
+  }
+
+ 
+}
+
+
+
+
 

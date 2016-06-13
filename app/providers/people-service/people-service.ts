@@ -183,6 +183,7 @@ export class PeopleService {
   }
 
   findByName(public name: String) {
+
     return new Promise((resolve, reject) => {
       let filtered = this.patients.filter(patient => (patient.firstName + ' ' + patient.lastName).toLowerCase().indexOf(name.toLowerCase()) > -1);
       resolve(filtered);
