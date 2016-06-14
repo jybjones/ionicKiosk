@@ -22,33 +22,23 @@ export class PatientDetailPage {
    constructor(public nav: NavController, public navParams: NavParams, public peopleService: PeopleService, el: ElementRef, renderer: Renderer){
    	// If we navigated to this page, we will have an item available as a nav param
    	this.patient = navParams.get('patient');
-
+  
    }
-
-    verified(event) {
-    this.nav.push(PatientDetailPage, {
-    });
-  }
 
   goToConsent(){
       this.nav.push(ConsentPage);
     }
 
-  buttonClick() {
-      this.active = !this.active;
-     
-
-    }
-// addToFavorites() {
-//   le el = document.getElementById("addToFav");
-//   if (el.textContent == "Add to Favorites") {
-//       el.textContent = "Remove from Favorites";
-//   } else {
-//       el.textContent = "Add to Favorites";
-//   }
-// }
-
-
+ 
+verify() {
+  this.active = !this.active;
+  var el = document.getElementById("verify");
+  if (el.textContent == "Verify") {
+      el.textContent = "VERIFIED";
+  } else {
+      el.textContent = "Verify";
+  }
+}
 
 
 }

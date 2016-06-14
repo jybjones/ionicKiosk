@@ -1,8 +1,6 @@
 
 <ion-navbar secondary *navbar>
-  <button menuToggle *ngIf="!patient">
-    <!-- <ion-icon name="menu">verify?</ion-icon> -->
-  </button>
+  <button menuToggle *ngIf="!patient"></button>
   <ion-title>
     <img src = "images/kiosk-logo.svg" class="logo" /> Patient Detail
   </ion-title>
@@ -39,7 +37,7 @@
 		  </ion-row>
 
    		<ion-row class="bottom-detail">
-          <button class="button button-block" [class.my-class]="!active" (click)="buttonClick()">Verify</button>
+          <button class="button button-block" [class.my-class]="!active" id="verify" (click)="verify();" value="1">Verify</button>    
       </ion-row>
 
 
