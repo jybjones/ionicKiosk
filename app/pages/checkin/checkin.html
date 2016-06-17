@@ -5,11 +5,11 @@
 </ion-navbar>
 
 <ion-content padding class="checkin">
-<p><strong>8am</strong><span class="statusRight"><strong>127</strong> Booked | <strong>56</strong>Checked-In</span></p>
+<p class="statusLeft"><strong>8AM</strong><span class="statusRight"><strong>127</strong> Booked | <strong>56</strong> Checked-In</span></p>
 
 <ion-list>
         <ion-item>
-            <ion-input type="text" placeholder="Search..." (input)="search($event, searchKey)">
+            <ion-input type="text" placeholder="Search for a patient..." (input)="search($event, searchKey)">
             </ion-input>
         </ion-item>
         <ion-item *ngFor="#patient of patients" (click)="itemTapped($event, patient)">
@@ -20,7 +20,4 @@
             <h4><span class='statusRight'>{{patient.doctor}}</span></h4>
         </ion-item>
     </ion-list>
-
-  
-  
 </ion-content>
