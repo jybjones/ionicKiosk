@@ -9,29 +9,25 @@
 </ion-navbar>
 
 <ion-content padding class="intake-forms">
-  <h2> Medical Procedures </h2>
-  <h4> Understanding your past medical procedres </h4> 
-
-  <h4>Have you ever had any of the following?</h4>
+  <h2 class="title-type"> Medical Procedures </h2>
+  <h5 class="description"> Understanding your past medical procedures helps your provider understand your future health risks. </h5> 
+  <h4 class="questions">Have you ever had any of the following?</h4>
 
 
 <ion-container>
 <ion-row>
-
- <!-- <ion-segment [(ngModel)]="patient-submit" multiple="true"> -->
-      <!--  <button class="button button-block" [class.my-class]="!active"(click)="formsClick()">Verify</button>
-        <button class="button button-block" [class.my-class]="!active"(click)="formsClick()">Verify</button>
-         <button class="button button-block" [class.my-class]="!active"(click)="formsClick()">Verify</button> -->
-<button id="color" class="button-block background" (click)="changeColor($event)" value="1">A</button>
-<button id="color" class="button-block background" (click)="changeColor($event)">B</button>
-<button id="color" class="button-block background" (click)="changeColor($event)">C</button>
-
-<!-- <button id="color" bgClass = bgClass=='background' ? 'background2' : 'background';>C</button> -->
-
-
-<!-- <element [className]="bgClass"... /> -->
-<!-- <button[className]="bgClass"  (click)="changeColor($event)">TEST </button[className]="bgClass"> -->
-
+ <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+         (click)="toggle(!isOn)">
+         Click me!
+     </ion-item>
+<ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+         (click)="toggle(!isOn)">
+         Click me!
+     </ion-item>
+<ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+         (click)="toggle(!isOn)">
+         Click me!
+     </ion-item>
 
   <ion-col width-10 class="dodo">
   <p> <img src = "images/multi-select.png"/></p> <br>
@@ -42,12 +38,13 @@
 
 </ion-row>
 
- 
 
 </ion-container>
 
 
-
+<!-- <button [bgClass] = "bgClass=='background' ? 'background2' : 'background'";>TESTY</button>
+ -->
+  
 <!-- shows output on th ebottom -->
 <!-- <ion-list radio-group [(ngModel)]="content" multiple="true">
     <ion-item class="listItems">
