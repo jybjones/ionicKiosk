@@ -2,6 +2,7 @@
 	background: #FFFFFF;
 	color: #666666;
 
+// .col {height: 120px}
   // .background {
   //   background: transparent;
   //   border: 1px solid $kiosk-green !important;
@@ -44,10 +45,32 @@
      color: #979797;
   }
 
+  ion-col.round-btn {
+    margin-right: 3%;
+    margin-left: 3%;
+    max-width: 15%;
+
+}
   
-  
-    
-    
+    ion-item.button.button-block.round-btn.item {
+    border-radius: 100px;
+}
+    img.following {
+    margin-bottom: 10%;
+
+}
+ion-col.following-img {
+    position: static;
+}
+
+ion-row.questions.multiple {
+    margin-top: -4%;
+    padding-right: 4px;
+}
+
+
+
+
 }
 
 
