@@ -17,12 +17,26 @@ import {Directive, ElementRef, Renderer, Input } from '@angular/core';
 })
 
 export class IntakeFormsPage {
-  constructor(public nav: NavController,  public el: ElementRef) {
+  constructor(public nav: NavController, public el: ElementRef ) {
   	this.el = el; 
-
- // public renderer: Renderer
-  
+   
+    // this.buttonDisabled = false;
+    // el.className = string;
+ // , private _className: string
+  // , public renderer: Renderer
   }
+
+  
+  
+  // changeColor() {
+  //   if (this.className === `background`) {
+  //     this.renderer.setElementClass(this.el, this.className, true);
+  //   } else {
+  //     this.renderer.setElementClass(this.el, this.className, false);
+  //   }
+  // }
+ 
+
 
 // changeColor(el){
 //   if(el.className == "background"){
@@ -31,12 +45,36 @@ export class IntakeFormsPage {
 //     el.className = "background";
 //   }
 // }
+
+// function changeColor(el) {
+//   if (el.className == "background") {
+//     el.className = "background2";
+//   } else {
+//     el.className = "background";
+//   }
+// }
+
   toggle(newState) {
     if (!this.isDisabled) {
       this.isOn = newState;
     }
   }
-  
+
+
+//   var btn = $('button');
+// btn.on('click', function() {
+
+//   if ($(this).hasClass('disabledBtn')) {
+//     $(this).removeClass('disabledBtn');
+//     $(this).addClass('enabledBtn');
+//   } else if ($(this).hasClass('enabledBtn')) {
+//     $(this).removeClass('enabledBtn');
+//     $(this).addClass('disabledBtn');
+//   } else {
+//     $(this).addClass('disabledBtn');
+//   }
+// });
+
 // bgClass = bgClass=='background' ? 'background2' : 'background';
 
 

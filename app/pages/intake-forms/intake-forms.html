@@ -9,68 +9,57 @@
 </ion-navbar>
 
 <ion-content padding class="intake-forms">
- <ion-container>
+<ion-container>
 
-<ion-row width-100>
-<ion-col>
-  <h2 class="title-type"> Medical Procedures </h2>
-  <h5 class="description"> Understanding your past medical procedures helps your provider understand your future health risks. </h5> 
-  <h4 class="questions">Have you ever had any of the following?</h4>
-
-  <ion-grid>
 <ion-row>
-   <ion-col width-60>
-      <ion-row class="questions">
- <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-         Click me!
-     </ion-item>
-<ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-         Click me!
-     </ion-item>
-<ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-         Click me!
-     </ion-item>
-      </ion-row>
-  </ion-col>
+  <ion-col width-90>
+    <h2 class="title-type"> Medical Procedures </h2>
+    <h5 class="description"> Understanding your past medical procedures helps your provider understand your future health risks. </h5> 
+    <h4 class="questions">Have you ever had any of the following?</h4>
 
-    <ion-col width-20 class="round-btn">
-      <ion-item class="button button-block round-btn" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-        None
-     </ion-item>
-    </ion-col>  
+    <ion-row>
+       <ion-col width-80>
+          <ion-row>
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Angioplasty(heart)!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Arthroscopic Knee</ion-item>
+          </ion-row>
+        </ion-col>
 
-</ion-row>
-</ion-grid>
+        <ion-col width-10 class="round-btn">
+          <ion-item class="button button-block round-btn" [ngClass]="{active: isOn, disabled: isDisabled}" (click)="toggle(!isOn)">None</ion-item>
+        </ion-col>  
+    </ion-row>
 
-<ion-grid>
-<ion-row>
-   <ion-col width-60>
-      <ion-row class="questions multiple">
- <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-         Click me!
-     </ion-item>
-<ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-         Click me!
-     </ion-item>
-<ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
-         (click)="toggle(!isOn)">
-         Click me!
-     </ion-item>
-      </ion-row>
-  </ion-col>
-
-    <ion-col width-20> </ion-col>  
-
-</ion-row>
-</ion-grid>
-
-</ion-col>
+    <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+     <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> 
+        <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+  </ion-col> <!-- //end width-80 -->
 
 <ion-col width-10 class="following-img">
    <img class="following" src = "images/multi-select.png"/> <br>
@@ -80,38 +69,164 @@
      <img class="following" src = "images/multi-select.png"/> <br>
       <img class="following" src = "images/multi-select.png"/> <br>
   </ion-col> 
-</ion-row>
+</ion-row><!-- //end mainRow-->
 
-</ion-container>
-    <!-- <div class="row">
-      <div class="col-75 col-offset-25">
-        <button class="button button-block button-energized">ROW THREE</button>
-      </div>
-    </div> -->
+<ion-row>
+  <ion-col width-90>
+    <h2 class="title-type"> Medical Procedures </h2>
+    <h5 class="description"> Understanding your past medical procedures helps your provider understand your future health risks. </h5> 
+    <h4 class="questions">Have you ever had any of the following?</h4>
 
-<!-- <button [bgClass] = "bgClass=='background' ? 'background2' : 'background'";>TESTY</button>
- -->
+    <ion-row>
+       <ion-col width-80>
+          <ion-row>
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Angioplasty(heart)!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Arthroscopic Knee</ion-item>
+          </ion-row>
+        </ion-col>
+
+        <ion-col width-10 class="round-btn">
+          <ion-item class="button button-block round-btn" [ngClass]="{active: isOn, disabled: isDisabled}" (click)="toggle(!isOn)">None</ion-item>
+        </ion-col>  
+    </ion-row>
+
+    <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+     <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> 
+        <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+  </ion-col> <!-- //end width-80 -->
+</ion-row><!-- //end mainRow-->
+
+<ion-row>
+  <ion-col width-90>
+    <h2 class="title-type"> Medical Procedures </h2>
+    <h5 class="description"> Understanding your past medical procedures helps your provider understand your future health risks. </h5> 
+    <h4 class="questions">Have you ever had any of the following?</h4>
+
+    <ion-row>
+       <ion-col width-80>
+          <ion-row>
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Angioplasty(heart)!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Arthroscopic Knee</ion-item>
+          </ion-row>
+        </ion-col>
+
+        <ion-col width-10 class="round-btn">
+          <ion-item class="button button-block round-btn" [ngClass]="{active: isOn, disabled: isDisabled}" (click)="toggle(!isOn)">None</ion-item>
+        </ion-col>  
+    </ion-row>
+
+    <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+     <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> 
+        <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+  </ion-col> <!-- //end width-80 -->
+</ion-row><!-- //end mainRow-->
+
+<ion-row>
+  <ion-col width-90>
+    <h2 class="title-type"> Medical Procedures </h2>
+    <h5 class="description"> Understanding your past medical procedures helps your provider understand your future health risks. </h5> 
+    <h4 class="questions">Have you ever had any of the following?</h4>
+
+    <ion-row>
+       <ion-col width-80>
+          <ion-row>
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Angioplasty(heart)!</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Arthroscopic Knee</ion-item>
+          </ion-row>
+        </ion-col>
+
+        <ion-col width-10 class="round-btn">
+          <ion-item class="button button-block round-btn" [ngClass]="{active: isOn, disabled: isDisabled}" (click)="toggle(!isOn)">None</ion-item>
+        </ion-col>  
+    </ion-row>
+
+    <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+     <ion-row>
+       <ion-col width-80>
+          <ion-row class="more-questions">
+            <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Breast</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">CABG(heart bypass)</ion-item>
+             <ion-item class="button button-block" [ngClass]="{active: isOn, disabled: isDisabled}" 
+             (click)="toggle(!isOn)">Click me!</ion-item>
+          </ion-row>
+        </ion-col> 
+        <ion-col width-10 class="round-btn"></ion-col>  
+    </ion-row>
+  </ion-col> <!-- //end width-80 -->
+</ion-row><!-- //end mainRow-->
   
-<!-- shows output on th ebottom -->
-<!-- <ion-list radio-group [(ngModel)]="content" multiple="true">
-    <ion-item class="listItems">
-        <ion-label>Option 1</ion-label>
-        <ion-radio checked="false" value="Option1" style="background: green;"></ion-radio>
-    </ion-item>
+</ion-container>
+   
 
-    <ion-item class="listItems">
-        <ion-label>Option 2</ion-label>
-        <ion-radio checked="false" value="Option2"></ion-radio>
-    </ion-item>
-
-    <ion-item class="listItems">
-        <ion-label>Option 3</ion-label>
-        <ion-radio checked="false" value="Option3"></ion-radio>
-    </ion-item>
-    </ion-list>
-    <h *ngIf="content=='Option1'"> Option 4</h>
-    <h *ngIf="content=='Option2'"> Option 2</h>
-    <h *ngIf="content=='Option3'"> Option 3</h>
- -->
-
+   
 </ion-content>
+

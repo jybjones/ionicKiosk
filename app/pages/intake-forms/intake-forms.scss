@@ -2,9 +2,8 @@
 	background: #FFFFFF;
 	color: #666666;
 
-// .col {height: 120px}
   // .background {
-  //   background: transparent;
+  //   background: purple;
   //   border: 1px solid $kiosk-green !important;
   //   color: $kiosk-green ;
   //   box-shadow: none;
@@ -13,16 +12,16 @@
   // .background2 {
   //   background-color: $kiosk-green;
   //   color: white;
-
-  //   .activated{
-  //     background-color: $kiosk-green;
-  //   }
   // }
 
+
   .button {
+    font-family: 'proxima';
+    font-weight: 600;
+    font-style: normal;
     background: transparent;
-    border: 1px solid $kiosk-green;
-    color: $kiosk-green ;
+    border: 1px solid #E0E0E0;
+    color: #979797;
     box-shadow: none;
     text-align: center;
 
@@ -30,6 +29,7 @@
   .button:hover:not(.disable-hover) {
     background-color: $kiosk-green;
     color: white;
+    border: 1px solid $kiosk-green;
   }
 
   h2.title-type {
@@ -49,24 +49,22 @@
     margin-right: 3%;
     margin-left: 3%;
     max-width: 15%;
+  }
 
-}
-  
-    ion-item.button.button-block.round-btn.item {
-    border-radius: 100px;
-}
-    img.following {
-    margin-bottom: 10%;
+  ion-item.button.button-block.round-btn.item {
+  border-radius: 100px;
+  }
+  img.following {
+  margin-bottom: 10%;
 
-}
-ion-col.following-img {
-    position: static;
-}
+  }
+  ion-col.following-img {
+  position: fixed;
+  }
 
-ion-row.questions.multiple {
-    margin-top: -4%;
-    padding-right: 4px;
-}
+  ion-row.more-questions {
+  margin-top: -11px;
+  }
 
 
 
