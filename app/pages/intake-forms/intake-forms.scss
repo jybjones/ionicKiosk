@@ -13,7 +13,10 @@
   //   background-color: $kiosk-green;
   //   color: white;
   // }
-
+  ion-row.conditions {
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
 
   .button {
     font-family: 'proxima';
@@ -46,14 +49,28 @@
   }
 
   ion-col.round-btn {
-    margin-right: 3%;
-    margin-left: 3%;
     max-width: 15%;
+    margin-left: 3%;
+}
+
+ ion-label.input-questions {
+    min-width: 300px;
+    color: #666;
+    font-size: 1.6rem;
+    margin-bottom: 0 !important;
+}
+  ion-item.button.button-block.round-btn.item {
+    border-radius: 100px;
+    font-size: 1.4rem;
   }
 
-  ion-item.button.button-block.round-btn.item {
-  border-radius: 100px;
-  }
+  .item-input ion-input, .item-input ion-textarea {
+    position: static;
+    max-width: 200px;
+    min-width: 200px;
+    border-bottom: 1px solid gray;
+}
+
   img.following {
   margin-bottom: 10%;
 

@@ -3,6 +3,7 @@ import {Component} from "@angular/core";
 import {ConsentPage} from '../consent/consent';
 import {Directive, ElementRef, Renderer, Input } from '@angular/core';
 
+// import {ionicDatePicker} from 'ionic-datepicker';
 /*
   Generated class for the IntakeFormsPage page.
 
@@ -19,14 +20,14 @@ import {Directive, ElementRef, Renderer, Input } from '@angular/core';
 export class IntakeFormsPage {
   constructor(public nav: NavController, public el: ElementRef ) {
   	this.el = el; 
-   
+
+  
     // this.buttonDisabled = false;
     // el.className = string;
  // , private _className: string
   // , public renderer: Renderer
   }
 
-  
   
   // changeColor() {
   //   if (this.className === `background`) {

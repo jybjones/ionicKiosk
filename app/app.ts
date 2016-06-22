@@ -29,4 +29,5 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp, [PeopleService]);
+ionicBootstrap(MyApp, [PeopleService]); 
+// ['ionic', 'ionic-datepicker']
