@@ -5,13 +5,17 @@
 </ion-navbar>
 
 <ion-content padding class="checkin">
-
-<ion-list>
+ <ion-searchbar 
+                 [(ngModel)]="queryText"
+                 (input)="search($event, searchKey)"
+                 placeholder="Search for a patient...">
+  </ion-searchbar>
+<!-- <ion-list>
         <ion-item>
             <ion-input type="text" placeholder="Search for a patient..." (input)="search($event, searchKey)">
             </ion-input>
         </ion-item>
-</ion-list>
+</ion-list> -->
 <p class="statusLeft"><strong>8AM</strong><span class="statusRight"><strong>127</strong> Booked | <strong>56</strong> Checked-In</span></p>
 
 <ion-list>
