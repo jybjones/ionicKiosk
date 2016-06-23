@@ -10,32 +10,42 @@
                  (input)="search($event, searchKey)"
                  placeholder="Search for a patient...">
   </ion-searchbar>
-<!-- <ion-list>
-        <ion-item>
-            <ion-input type="text" placeholder="Search for a patient..." (input)="search($event, searchKey)">
-            </ion-input>
-        </ion-item>
-</ion-list> -->
+
 <p class="statusLeft"><strong>8AM</strong><span class="checkin-right"><strong>127</strong> Booked | <strong>56</strong> Checked-In</span></p>
 
 <ion-list>
         <ion-item *ngFor="let patient of patients | slice:0:4, let i=index"(click)= "itemTapped($event, patient)">
+        <h2 class="times" item-left>{{patient.appointmentTime}}</h2>
             <ion-avatar item-left>
                 <img src="{{patient.picture}}"/>
             </ion-avatar>
-            <h2>{{patient.firstName}} {{patient.lastName}} <span class='statusRight'>{{patient.doctor}}</span></h2>
+            <h2 secondary>{{patient.firstName}} {{patient.lastName}} <span class='statusRight'>{{patient.doctor}}</span></h2>
         </ion-item>
     </ion-list>
 
-<p class="statusLeft"><strong>9AM</strong></p><!-- <span class="statusRight"><strong>127</strong> Booked | <strong>56</strong> Checked-In</span></p> -->
+<p class="statusLeft"><strong>9AM</strong></p>
 
 <ion-list>
         
-        <ion-item *ngFor="let patient of patients | slice:5:14, let i=index" (click)="itemTapped($event, patient)">
+        <ion-item *ngFor="let patient of patients | slice:5:10, let i=index" (click)="itemTapped($event, patient)">
+        <h2 class="times" item-left>{{patient.appointmentTime}}</h2>
             <ion-avatar item-left>
                 <img src="{{patient.picture}}"/>
             </ion-avatar>
-            <h2>{{patient.firstName}} {{patient.lastName}} <span class='statusRight'>{{patient.doctor}}</span></h2>
+            <h2 secondary>{{patient.firstName}} {{patient.lastName}} <span class='statusRight'>{{patient.doctor}}</span></h2>
+        </ion-item>
+    </ion-list>
+
+<p class="statusLeft"><strong>10AM</strong></p>
+
+<ion-list>
+        
+        <ion-item *ngFor="let patient of patients | slice:11:14, let i=index" (click)="itemTapped($event, patient)">
+        <h2 class="times" item-left>{{patient.appointmentTime}}</h2>
+            <ion-avatar item-left>
+                <img src="{{patient.picture}}"/>
+            </ion-avatar>
+            <h2 secondary>{{patient.firstName}} {{patient.lastName}} <span class='statusRight'>{{patient.doctor}}</span></h2>
         </ion-item>
     </ion-list>
 

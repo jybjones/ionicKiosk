@@ -3,8 +3,15 @@ ion-searchbar {
     background: #1496E3;
 }
 .statusLeft {
-	color: white;
+	color: #FFF;
+  margin: 4% 0 4% 0;
+  font-size: 1.6rem;
 }
+h2.times {
+    min-width: 100px;
+    max-width: 100px;
+}
+
 span.statusRight {
     float: right;
     color: #666;
