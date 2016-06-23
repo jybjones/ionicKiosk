@@ -68,7 +68,8 @@
     position: static;
     max-width: 200px;
     min-width: 200px;
-    border-bottom: 1px solid gray;
+    border-bottom: .5px solid #666;
+    color: $kiosk-green;
 }
 
   img.following {

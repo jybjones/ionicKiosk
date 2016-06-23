@@ -184,11 +184,13 @@
          <ion-list inset>
             <ion-item>
               <ion-label class="input-questions">When was your last physical?</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input type="text" placeholder="calendar"></ion-input>
+              <button item-right clear (click)='clearInputText($event)'>
+                <ion-icon class="ionic-color" name="calendar"></ion-icon></button>
             </ion-item>
-            </ion-list>
+             </ion-list>
           </ion-col>
-          <ion-icon name="star">b4Btn</ion-icon>
+
           <ion-col width-20 class="round-btn">
           <ion-item class="button button-block round-btn" [ngClass]="{active: isOn, disabled: isDisabled}" (click)="toggle(!isOn)">NEVER</ion-item>
         </ion-col>         
@@ -199,7 +201,9 @@
          <ion-list inset>
             <ion-item>
               <ion-label class="input-questions">When was your last flu shot?</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input type="text" placeholder="calendar"></ion-input>
+              <button item-right clear (click)='clearInputText($event)'>
+                <ion-icon class="ionic-color" name="calendar"></ion-icon></button>
             </ion-item>
             </ion-list>
           </ion-col>
@@ -213,7 +217,9 @@
          <ion-list inset>
             <ion-item>
               <ion-label class="input-questions">When was your last pneumonia shot?</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input type="text" placeholder="calendar"></ion-input>
+              <button item-right clear (click)='clearInputText($event)'>
+                <ion-icon class="ionic-color" name="calendar"></ion-icon></button>
             </ion-item>
             </ion-list>
           </ion-col>
